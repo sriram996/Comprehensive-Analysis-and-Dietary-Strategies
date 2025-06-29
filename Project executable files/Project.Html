@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Food Choices Case Study</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+    .heading-font {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold heading-font">Food Choices Analysis.</h1>
+      <nav class="space-x-6 text-sm font-semibold">
+        <a href="#home" class="hover:text-red-500">Home</a>
+        <a href="#dashboard" class="hover:text-red-500">Dashboard</a>
+        <a href="#insights" class="text-red-600 border-b-2 border-red-600">Insights</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Project Overview -->
+  <section id="home" class="max-w-5xl mx-auto px-6 py-10">
+    <h2 class="text-3xl font-bold mb-4 heading-font">Comprehensive Analysis and Dietary Strategies with Tableau</h2>
+    <p class="text-lg leading-relaxed text-justify">
+      This project is aimed at revolutionizing how dietary data among college students is visualized and utilized to enhance student health and academic performance. 
+      By creating an intuitive platform using Tableau, the initiative seeks to transform student diet, exercise, and health perception data into interactive dashboards that support data-driven strategies and nutritional decisions.
+    </p>
+  </section>
+
+  <!-- Tableau Dashboard -->
+  <section id="dashboard" class="max-w-7xl mx-auto px-4 py-8">
+    <h2 class="text-2xl font-semibold mb-4 heading-font">Dashboard</h2>
+    <div class="tableauPlaceholder" id="viz1751212949096" style="position: relative">
+      <noscript>
+        <a href="#">
+          <img alt="LifeStyle Overview" src="https://public.tableau.com/static/images/KZ/KZQYJNY72/1_rss.png" style="border: none" />
+        </a>
+      </noscript>
+      <object class="tableauViz" style="display:none;">
+        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+        <param name="embed_code_version" value="3" />
+        <param name="path" value="shared&#47;KZQYJNY72" />
+        <param name="toolbar" value="yes" />
+        <param name="static_image" value="https://public.tableau.com/static/images/KZ/KZQYJNY72/1.png" />
+        <param name="animate_transition" value="yes" />
+        <param name="display_static_image" value="yes" />
+        <param name="display_spinner" value="yes" />
+        <param name="display_overlay" value="yes" />
+        <param name="display_count" value="yes" />
+        <param name="language" value="en-GB" />
+      </object>
+    </div>
+    <script type="text/javascript">
+      var divElement = document.getElementById('viz1751212949096');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      if (divElement.offsetWidth > 800) {
+        vizElement.style.width = '100%';
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+      } else if (divElement.offsetWidth > 500) {
+        vizElement.style.width = '100%';
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+      } else {
+        vizElement.style.width = '100%';
+        vizElement.style.height = '1977px';
+      }
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </section>
+
+  <!-- Insights Section -->
+  <section id="insights" class="bg-gray-50 py-10">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-3xl text-red-600 font-bold heading-font mb-4">Insights from Analysis</h2>
+        <p class="text-md leading-relaxed text-justify">
+          Our analysis of university students' food choices reveals that most students prefer home-cooked American food and cereal for breakfast over donuts.
+          The majority perceive their diet as unhealthy despite regular exercise, and they are actively engaged in checking nutritional values and consuming fruits, vegetables, and vitamins.
+          Insights suggest a need for health education and support for healthier dietary practices among students.
+        </p>
+      </div>
+      <div>
+        <img src="./Project-cover.jpg" alt="Healthy vs Unhealthy Food Choices" class="rounded-xl shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t text-center text-sm text-gray-500 py-6 mt-10">
+    &copy; 2025 College Food Choices Project. All rights reserved.
+  </footer>
+</body>
+</html>
